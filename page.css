@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero_section{
+    /* border: 2px solid rgb(6, 179, 29);  */
+    width: 100vw;
+    height: 100vh; 
+}
+.div_section{
+/* border: 2px solid rgb(238, 8, 8); */
+    height: 100%;
+  width: 100%;
+  background-position: center;
+  width: 100vw;
+  height: 100vh; 
+  background-image: url(img1.jpg);
+  position: relative;
+  background-size: cover;
+}
+.text{
+    /* position: static; */
+    color: #000;
+    margin: 0 auto;
+    padding-top: 116px;
+    padding-left: 366px;
+}
+
+.text h1{
+    padding-left: 30px;;
+}
+
+.black_box{
+    background-color: #000;
+    padding: 20px;
+}
+.black_box h3{
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+   text-align: center; 
+}
+.black_box h3 span{
+    font-size: 96px;
+}
+.card{
+   
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
+    max-width: 1100px;
+    margin: 50px auto;
+}
+.main_div1:hover{
+    transform: scale(1.05);
+}
+.main_div1{
+    /* border: 4px solid rgb(211, 16, 136); */
+    max-width: 340px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2);
+}
+.div1{
+    /* border: 1px solid rgb(57, 8, 146); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.text1{
+    /* border: 2px solid rgb(12, 226, 119); */
+    margin: 10px;
+    padding: 0 0 0 0;
+    width: auto;
+    height: 50%; 
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.bottom_section{
+        display: flex;
+        flex-direction: row;
+        /* border: 5px solid yellow; */
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        
+}
+.contact_me{
+    background-color: rgb(89, 133, 89);
+    text-align: center;
+    width: 45%;
+    height: 150px;
+}
+.About_me{
+    background-color: rgb(202, 81, 81);
+    text-align: center;
+    width: 45%;
+    height: 150px;
+}
+.text2{
+    text-align: center;
+    margin: 10px;
+}
+@media (max-width: 786px) {
+    .hero_section {
+      min-height: 50vh;
+    }
+    .text {
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    .black_box h3 {
+      font-size: 24px;
+    }
+    .black_box h3 span {
+      font-weight: 400;
+      font-size: 32px;
+    }
+    
+   
+    .bottom_section {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+    }
+  
+    .contact_me h2 p,
+    .About_me h2 p{
+      font-size: 25px;
+    }
+}
